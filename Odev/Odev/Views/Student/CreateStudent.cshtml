@@ -1,0 +1,13 @@
+﻿@addTagHelper *,Microsoft.AspNetcore.Mvc.TagHelpers
+@model Odev.Models.Student
+
+<form asp-action="CreateStudent" asp-controller="Student" method="post">
+    <input type="text" asp-for="StudentName" placeholder="Student Name"/><br/>
+     <input type="text" asp-for="StudentSurname" placeholder="Student Surname"/><br/>
+     <input type="email" asp-for="StudentEmail" placeholder="Student Email"/><br/>
+
+     <button>Send</button>
+</form>
+
+
+
